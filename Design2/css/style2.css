@@ -1,0 +1,119 @@
+
+.wallpaper{
+    background-image: url(../images/4-streaks-body.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    position: absolute;
+    width: 99%;
+    height: 99%;
+}
+fieldset{
+    width:300px;
+    height:150px;
+    border-radius: 10px;
+    border: 5px solid crimson;
+    position:relative;
+    top:-100;
+    left: 10px;
+    padding:25px;
+    font-size: 20px;
+    
+}
+legend{
+    color:white;
+    padding:10px;
+    text-align: left;
+    text-transform: uppercase;
+    background-color:crimson;
+    border-radius: 5px;
+
+   
+}
+label{
+    color:white;
+    padding:10;
+    width:99%;
+    height:99%
+}
+
+div.navbar {
+    animation-name: redToBlue;
+    animation-iteration-count: infinite;  
+    animation-duration: 10s; 
+    margin:10px; 
+    padding-bottom: 10px;
+}
+ul li {
+    display:inline-block;
+    
+    
+}
+li a:active, li a{
+    text-decoration: none;
+    color:white;
+    box-sizing: border-box;
+    
+}
+.navcontent {
+    margin: 20;
+    font-size: 25px;
+    /*border: solid;
+    border-color: #003366;
+    border-width: 5px;
+    background-color:#003366 ;*/
+}
+
+.topDesign{
+    background: url(../images/4-streaks-top.jpg);
+    margin: -6;
+    padding: 90px; 
+    width:99%;
+    position:relative;
+    top:-10;
+    
+}
+a:hover{
+    color:royalblue;
+}
+.socialLinks{
+    width:4%;
+    height:8%;
+    margin:0 18 0 50;
+    padding:20 0/*68*/ 0 0;
+    top:0;
+    left:640px;
+    position:relative;
+
+}
+.navbar {
+    position: absolute;
+    top:0;
+    left:-10;
+}
+footer{
+    font-size:80%;
+    padding: 7 0 0 20;
+    color:white;
+    bottom:0;
+    position:absolute;
+}
+@-webkit-keyframes redToBlue{
+
+    0% { border-bottom:5px solid darkRed;}
+    50% {border-bottom:5px solid darkRed;}
+    51% { border-bottom:5px solid royalblue;}
+    100% {border-bottom:5px solid royalblue;}
+    
+}
+.color1{
+    color: royalblue;
+}
+.color2{
+    color:darkseagreen;
+}
+.color3{
+    color:darkorange;
+}
+.color4{
+    color:darkred;
+}

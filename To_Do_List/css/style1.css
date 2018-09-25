@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    background-color: darkorange;
+}
+.center{
+
+text-align: left;
+list-style-type: inside;
+display:inline-block;
+padding:75;
+column-width: 2;
+background-color:whitesmoke;
+}
+button{
+    margin:10;
+}
+li button{
+    margin:15;
+    padding: 10;
+    position:static;
+    
+    display: inline-block;
+    
+}
+li{
+    text-indent:20;
+    position:relative;
+
+
+}
+form{
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: orange;
+    width:500;
+    top:100;
+    left:200;
+
+}
+h1{
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: orange;
+    width:500;
+    top:63;
+    left:200;
+
+}
+p{
+    color:black;
+    
+}

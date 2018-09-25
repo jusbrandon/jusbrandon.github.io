@@ -1,0 +1,28 @@
+<html>
+    <head><title>TODO List</title>
+        <script src = 'javascript/todolistClean.js'></script>
+        <link href = "css/style1.css" rel="stylesheet" type="text/css">
+        <script src='javascript/jquery-3.3.1.js'></script>
+        <script>
+        window.onload = ReloadElements;
+        </script>
+
+    </head>
+    <body>
+        <div id ="result"></div>
+        <h1> List of Items to Do</h1>
+        <form id ='TodoForm'>   
+            <input type = 'text' id = 'TodoInput' onfocus="this.value =''" >
+            <button type ="button" onclick ="todoList()" >Add</button>
+            <button type ="button" onclick ="clearItems()" >Clear</button>
+        
+        </form>
+        
+        <strong><p>Double click to Remove item</p>
+        <p>Click complete to mark and double click to unmark</p></strong>
+        <ol class = 'center' id='checklist'>
+            
+        </ol>
+    <div id="result"></div>
+    </body>
+</html>

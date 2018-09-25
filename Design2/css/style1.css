@@ -1,0 +1,124 @@
+
+
+.wallpaper{
+    background: url(../images/4-streaks-body.jpg);
+    background-repeat:repeat;
+    background-size:auto;
+    width:99%;
+    height:99%;
+    position:absolute;
+
+}
+div.navbar {
+ 
+    animation-name: redToBlue;
+    animation-iteration-count: infinite;  
+    animation-duration: 10s; 
+    margin:10px; 
+    padding-bottom: 10px;
+    
+    
+}
+.topDesign{
+    background: url(../images/4-streaks-top.jpg);
+    margin: -6px;
+    position:relative;
+    width:99%;
+    padding:90;
+    top:-10;
+    
+}
+.navbar {
+    position: absolute;
+    top:0;
+    left:-15;
+}
+.navcontent {
+    margin: 20;
+    font-size: 25px;
+    /*border: solid;
+    border-color: #003366;
+    border-width: 5px;
+    background-color:#003366 ;*/
+}
+.navcontent {
+}
+ul li {
+    display:inline-block;
+
+}
+li a:active, li a{
+    text-decoration: none;
+    color:white;
+    box-sizing: border-box;
+    
+}
+blockquote {
+    color:#ec695e;
+    font-size: 25px;
+    width: 300;
+    height: auto;
+    float:right;
+    
+    text-align: left;
+     padding: 100;
+}
+.Quoter{
+    color:/*#FF6A5C*/;
+}
+
+
+.Lfloat {
+    width:150;
+    margin: 10;
+    box-sizing:content-box;
+    padding:10;
+    border: solid royalblue 5px;
+    font-size:18px;
+    color: white;
+    float:left;
+    
+}
+
+a:hover{
+    color:royalblue;
+}
+.socialLinks{
+    width:4%;
+    height:8%;
+    margin:0 18 0 50;
+    padding:20 0/*68*/ 0 0;
+    top:0;
+    left:640px;
+    position:relative;
+
+}
+
+@-webkit-keyframes redToBlue{
+
+    0% { border-bottom:5px solid darkRed;}
+    50% {border-bottom:5px solid darkRed;}
+    51% { border-bottom:5px solid royalblue;}
+    100% {border-bottom:5px solid royalblue;}
+    
+}
+footer{
+    font-size:80%;
+    padding: 7 0 0 20;
+    color:white;
+    bottom:-0;
+    position:absolute;
+}
+.color1{
+    color: royalblue;
+}
+.color2{
+    color:darkseagreen;
+}
+.color3{
+    color:darkorange;
+}
+.color4{
+    color:darkred;
+}
+

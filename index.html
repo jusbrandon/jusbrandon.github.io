@@ -1,6 +1,100 @@
 <html>
-<head><title>Testing index page</title></head>
-<body>
-    <h1> Hello WORLD</h1>
-</body>
+    <head>
+        <title> Brandons Home Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <link href="Design1/Resource/CSS/HomePageCSS.css" type="text/css" rel="stylesheet" />
+        <script>
+        $(document).ready(function()
+        {
+            /*$("#AboutContent").click(function (e) { e.preventDefault(); });
+            $("#ProjectContent").click(function (e) { e.preventDefault(); });
+            $("#LearningContent").click(function (e) { e.preventDefault(); });*/
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e){ 
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth'});
+                });
+            });
+        });
+        
+        </script>
+    </head>
+    <body background ="Design1/Resource/images/Galaxy.jpg">
+   
+            <ul class="navBar">
+                <li id = 'top'><a href="index.html">Home</a></li>
+                <li><a href='Design1/contact.html'>Contact </a></li>
+                <li><a href='Design1/interactive.html'>Javascript &amp; JQuery</a></li>
+                <li><a href='https://twitter.com' target = '_blank'>Twitter </a></li>
+                <li><a href= 'Design2/index.html'>Design 2 </a></li>
+                <li><a href= 'To_Do_List/index.html'>To-Do-List</a></li>
+                <li class='dropdown'><a href='javascript:void(0)' class ='droptable'>Recommended Books </a>
+                    <div class='dropdown-content'>
+                        <a href='http://www.htmlandcssbook.com/' target = '_blank'>HTML &amp; CSS by Jon Duckett</a>
+                        <a href='https://www.amazon.com/JavaScript-jQuery-David-Sawyer-McFarland/dp/1449399029' target = '_blank'>Javascript &amp; JQuery by David Sawyer</a>
+                        <a href='https://google.com' target = '_blank'>Google</a>
+                    </div>
+                </li>
+                <li class ='dropdown'><a href = 'javascript:void(0)' class = 'droptable'> Jump To</a>
+                    <div class='dropdown-content'>
+                        <a href = '#Introductions' >Introductions</a>
+                        <a href = '#ProjectContent' >About Projects</a>
+                        <a href = '#LearningContent' >Learning Experience</a>
+                    </div>
+                </li> 
+            </ul>
+      
+        <fieldset>
+            <h2 class = 'profile'>About</h2>
+            <hr size = '5'> 
+            <div id ='Introductions'>
+                    <p>Hello and welcome to my website. My name is Brandon and I am based in Sugarland, TX. I am creating this site for the purpose of demostrating my skills in Html, CSS, and Javascript.
+                    the reason for why I am creating this site is to let potential employers know the skills set that I posses. By doing so I hope that I can demostrate some of my skills and leave a good impression of myself. I am interested in the field of <strong>Software Development</strong>,which includes <strong>Front-end Development</strong> and <strong>Back-end Development</strong>. At the time of creating this I am a little inexperience, I do hope that my potential employer would take my application into consideration during the hireing process. By being able to code this website, I help myself improve and better my skill for future projects. This website is my first step into becoming a better programmer.
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111026.85402111568!2d-95.7090541369971!3d29.586554069528304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640de10e11b70cb%3A0x2779e11b2263d8cc!2sSugar+Land%2C+TX!5e0!3m2!1sen!2sus!4v1534794616024" width="450" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+                
+        </fieldset>
+            
+        <fieldset>
+            <div id ='ProjectContent'>
+                <h2> Personal Projects </h2>
+                    <hr size = '5'>    
+                <p>
+                    This is an example of a personal project that I am creating. By creating this website I am able to gain experience while also being able to create something I am proud of. Computer programming can branch into many fields such that there will be endless opportunity for their respected skill set.
+                </p>
+                <p> I pulled this quote from Savielly Tartakower because in a game of wits it is the person with the most knowledge that can outwit the other. It pushes myself to strive for more knowledge as technology is expanding at an incredible rate. There is countless of new scientific research being found by people all around the globe, and one day I too hope that I can contribute towards the advancement of technology by creating something used by others. </p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div id='LearningContent'>
+                <h2><legend>Learning Experiences</legend></h2><hr size ='5' >
+                <p>When designing a site it is intuative that we take these UX principle into considerations.</p><br>
+                <dl id='keyPoints'>
+                    <strong><dt>User Experience (UX)</dt><br> 
+                        <dt>Useable</dt>
+                            <dd>Does the website functions the way it is intended to? All links work the way it was created for, Is there any Design flaws?</dd>
+                        <dt>Useful</dt>
+                            <dd>How informative was the site for the user? Was the information presented in a clear and easy way?</dd>
+                        <dt>Desirable</dt>
+                            <dd>Who is this site for? Is there a targeted audiance?</dd>
+                        <dt>Findable</dt>
+                            <dd>How simple was it for information to be found on the site? Is the site navigatable? Are the links to other pages of the site like About, contact, etc. working?</dd>
+                        <dt>Accessible</dt>
+                            <dd>Is the site catered to help those with color blindness or other disabilities?</dd>
+                        <dt>Credible</dt>
+                            <dd>Is the site credible? Are they who they say they are and not just an unaffiliated site with the same name as the organization?</dd>
+                    </strong>
+                </dl>
+            </div>
+            <hr size ='5'>
+            <div class ='Debugging'>
+                <h2> Debugging</h2>
+                <hr size = '5'>
+                <p> This is my first practical attempt at coding a website and as most first timers, I made a few mistakes.  The best way towards fixing errors is to know what is the error first by looking at your code, rereading code and solving it through there. Secondly the other option is to see if there are any other programmers who have made the same mistakes. More common than others, there will most likely be someone who have made a mistake very similar to yours. So my preferences is to look around through online resources and see if there are similer coders who encounter the same problems. For instance an error that I was stuck on for a while was being able to transtion with anchor tag <strong><q>a</q></strong>. I kept getting a jumpy transition when I wanted a smooth transition to another bookmark on my page and solved it by using a little javascript to create a smooth transition with all anchor tags.
+                </p>
+            </div>
+        </fieldset>
+        <a href='#top'> Top </a>
+    </body>
 </html>
