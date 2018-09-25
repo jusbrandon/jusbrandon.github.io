@@ -1,0 +1,63 @@
+<html>
+    <head><title>Buttons</title>
+    <link href="Resource/CSS/HomePageCSS.css" type="text/css" rel="stylesheet" />
+        <script src='Resource/jQuery/jquery-3.3.1.js'></script>
+        <script>
+            $(function() {
+              $('.buttons').on('click', function() 
+                               {
+                  //$('#panel1').slideToggle(200);
+                    var buttonId = $(this).attr('id');
+                    $('#'+buttonId + '.content-body').slideToggle(500);
+                });
+              });
+        </script>
+    </head>
+    <body>
+            <ul class="navBar">
+                <li id = 'top'><a href="../homepage.html">Home</a></li>
+                <li><a href='contact.html'>Contact </a></li>
+                <li><a href='interactive.html'>Javascript &amp; JQuery</a></li>
+                <li><a href='https://twitter.com' target = '_blank'>Twitter </a></li>
+                <li><a href='../Design2/index.html'>Design 2 </a></li>
+                <li><a href='../To_Do_List/index.html'>To-Do-List </a></li>
+                <li class='dropdown'><a href='javascript:void(0)' class ='droptable'>Recommended Books </a>
+                    <div class='dropdown-content'>
+                        <a href='http://www.htmlandcssbook.com/' target = '_blank'>HTML &amp; CSS by Jon Duckett</a>
+                        <a href='https://www.amazon.com/JavaScript-jQuery-David-Sawyer-McFarland/dp/1449399029' target = '_blank'>Javascript &amp; JQuery by David Sawyer</a>
+                        <a href='https://google.com' target = '_blank'>Google</a>
+                    </div>
+                </li>
+            </ul>
+        <div class='container'>
+            <button class ='buttons' id = 'btn1'>Button # 1</button>
+            <button class ='buttons' id = 'btn2'>Button # 2</button>
+            <button class ='buttons' id = 'btn3'>Button # 3</button>
+            <button class ='buttons' id = 'btn4'>Button # 4</button>
+        </div>
+        
+            <div class = 'content-body' id = 'btn1'>
+                <fieldset >
+                    <p> Button 1 triggered</p>
+                </fieldset>
+                
+            </div>
+            <div class = 'content-body' id = 'btn2'>
+                <fieldset>
+                    <p> Button 2 triggered</p>
+                </fieldset>
+            </div>
+        
+            <div class = 'content-body'  id = 'btn3'>
+                <fieldset >
+                    <p> Button 3 triggered</p>
+                </fieldset>
+            </div>
+        
+            <div class = 'content-body' id = 'btn4'>
+                <fieldset>
+                    <p> Button 4 triggered</p>
+                </fieldset>
+            </div>
+    </body>
+</html>
